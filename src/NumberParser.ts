@@ -1,9 +1,10 @@
 export class NumberParser {
-  split(numbersPart: string, delimiter: string): number[] {
-    const regex = new RegExp(delimiter);
-    return numbersPart
-      .split(regex)
-      .filter(s => s.length > 0)
-      .map(Number);
+  split(input: string, delimiter: string | RegExp): number[] {
+    if (!input) return [];
+
+    return input
+      .split(delimiter)
+      .map(n => parseInt(n, 10))
+      .filter(n => !isNaN(n));
   }
 }

@@ -2,7 +2,7 @@ import { DelimiterParser } from './DelimiterParser';
 import { NumberParser } from './NumberParser';
 import { NegativeValidator } from './NegativeValidator';
 
-class StringCalculator {
+export class StringCalculator {
   private numberParser = new NumberParser();
   private delimiterParser = new DelimiterParser();
   private negativeValidator = new NegativeValidator();

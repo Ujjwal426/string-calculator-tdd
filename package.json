@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "build": "tsc"
@@ -12,7 +13,7 @@
     "url": "git@github.com-personal:Ujjwal426/string-calculator-tdd.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ujjwal Tiwari",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^30.0.0",
